@@ -53,33 +53,16 @@
                 <div class="card"  data-aos="fade-right"  >
                     <div class="card-body">
                         <h5 class="card-title">단일 치환 암호화</h5>
-                        <form action="one.js">
+                        <form>
                             <ul>
                                 <li> <label for="pswKey" class="form-label">암호키</label><br><input type="text" id="pswKey"></li>
                                 <li> <label for = "basicText" class="form-label">평문</label><br><input type="text" id="basicText"></li>
-                                <li><button type="submit" class = "btn btn-outline-light">암호화</button></li>
+                                <li><button type="submit" class = "btn btn-outline-light" onclick="one(pswKey, basicText)">암호화</button></li>
                                 <li> <label for = "pwsText" class="form-label">암호문</label><br><p id = "pwsText"></p></li>
                             </ul>
                         </form>
                     </div>
                 </div>
-                <div class="card"  data-aos="fade-left"  >
-                    <div class="card-body">
-                      <h5 class="card-title">단일 치환 복호화</h5>
-                      <form>
-                        <ul>
-                            <li> <label for="pswKey" class="form-label">복호키</label><br><input type="text" id="pswKey"></li>
-                            <li> <label for = "basicText" class="form-label">암호문</label><br><input type="text" id="basicText"></li>
-                            <li><button type="submit" class = "btn btn-outline-light">복호화</button></li>
-                            <li> <label for = "pwsText" class="form-label">평문</label><br><p id = "pwsText"></p></li>
-                        </ul>
-                    </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
                 <div class="card" data-aos="fade-right">
                     <div class="card-body">
                     <h5 class="card-title">쌍자 치환 암호화</h5>
@@ -89,6 +72,23 @@
                             <li> <label for = "basicText" class="form-label">평문</label><br><input type="text" id="basicText"></li>
                             <li><button type="submit" class = "btn btn-outline-light">암호화</button></li>
                             <li> <label for = "pwsText" class="form-label">암호문</label><br><p id = "pwsText"></p></li>
+                        </ul>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card"  data-aos="fade-left"  >
+                    <div class="card-body">
+                      <h5 class="card-title">단일 치환 복호화</h5>
+                      <form>
+                        <ul>
+                            <li> <label for="pswKey" class="form-label">복호키</label><br><input type="text" id="pswKey"></li>
+                            <li> <label for = "basicText" class="form-label">암호문</label><br><input type="text" id="basicText"></li>
+                            <li><button type="submit" class = "btn btn-outline-light">복호화</button></li>
+                            <li> <label for = "pwsText" class="form-label">평문</label><br><p id = "pwsText"></p></li>
                         </ul>
                     </form>
                     </div>
