@@ -48,19 +48,22 @@
     </head>
     <body>
         <h3 id = 'logo'>3202</h3>
-        <div class="container">
-            <div class="row">
-                <div class="card"  data-aos="fade-right"  >
-                    <div class="card-body">
+        <div class="container" name = "container">
+            <div class="row" name = "row">
+                <div class="card"  data-aos="fade-right"  name = "card">
+                    <div class="card-body" name = "card_body">
                         <h5 class="card-title">단일 치환 암호화</h5>
-                        <form>
+                        <form name = "pw_form">
                             <ul>
-                                <li> <label for="pswKey" class="form-label">암호키</label><br><input type="text" id="pswKey"></li>
-                                <li> <label for = "basicText" class="form-label">평문</label><br><input type="text" id="basicText"></li>
+                                <li> <label for="pswKey" class="form-label">암호키</label><br><input type="text" id="pswKey" name = "pswKey"></li>
+                                <li> <label for = "basicText" class="form-label">평문</label><br><input type="text" id="basicText" name = "basicText"></li>
                                 <li><button type="submit" class = "btn btn-outline-light" onclick="one(pswKey, basicText)">암호화</button></li>
-                                <li> <label for = "pwsText" class="form-label">암호문</label><br><p id = "pwsText"></p></li>
+                                <li> <label for = "pwsText" class="form-label">암호문</label><br><p id = "pwsText" name ="pwsText"></p></li>
                             </ul>
                         </form>
+                        <script>
+                            document.pw_form.pwsText = "동작";
+                        </script>
                     </div>
                 </div>
                 <div class="card" data-aos="fade-right">
@@ -78,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="card"  data-aos="fade-left"  >
                     <div class="card-body">
@@ -107,7 +110,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <script> AOS.init(); // 자바스크립트로 init()을 해야 동작한다. </script>
     </body>
 </html>
