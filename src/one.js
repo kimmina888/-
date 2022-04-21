@@ -1,16 +1,15 @@
 "use strict";
 function one(security_key, s){
     let result = "";
-    console.log("오류");
     let Alp = new String("abcdefghijklmnopqrstuvwxyz");
-    console.log("오류");
     s.trim();
-    console.log("오류");
-    let sk = new String(new Set(security_key.trim()+Alp));
-    
+    let sk = (security_key.trim())+Alp;
+    sk = (new Set(sk));
+    console.log(sk);
+
     for(let i = 0; i < s.length; i++){
         // console.log("오류");
-        result += sk.charAt(Alp.indexOf(s.charAt(i)));
+        result += Alp.indexOf(s.charAt(i));
     }
 
     console.log("오류");
