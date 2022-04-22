@@ -1,5 +1,5 @@
-"use strict";s
-function one(security_key, ){
+"use strict";
+function one(security_key, s){
     let result = "";
     let Alp = new String("abcdefghijklmnopqrstuvwxyz");
     s.trim();
@@ -11,12 +11,7 @@ function one(security_key, ){
         // console.log("오류");
         result += sk.charAt(Alp.indexOf(s.charAt(i)));
     }
-
-    console.log("오류");
-    // document.body.container.row.card.card_body.pswText = result;
-    console.log("오류"); 
-    console.log(result);
+    document.getElementById('pwsText') = result;
 }
-one("coffee","i drink a coffee");
 
 

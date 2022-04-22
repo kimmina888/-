@@ -1,6 +1,7 @@
-function two(security_key, s) {
+function two() {
+    let security_key = "coffee";
+    let s = "i want to drink coffee";
     let alphabetBoard = new Array(Array(), Array(), Array(), Array(), Array());
-    let oddFlag = false;
     let playFair = new Array();
     let encPlayFair = new Array();
     let x1 = 0, x2 = 0, y1 = 0, y2 = 0;
@@ -64,6 +65,8 @@ function two(security_key, s) {
         encStr += encPlayFair[i][0] + "" + encPlayFair[i][1] + " ";
     }
 
-
-    document.getElementById('pwsText').dataset(encStr);
+    console.log(encStr);
+    // var pws = document.body.getElementById('pwsText2');
+    // console.log(pws);
+    // pws.appendChild(encStr);
 }
