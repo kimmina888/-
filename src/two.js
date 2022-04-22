@@ -65,6 +65,5 @@ function two(security_key, s) {
     }
 
 
-    console.log(encStr);
+    document.getElementById('pwsText').dataset(encStr);
 }
-two("coffee", "i want to drink coffee");
